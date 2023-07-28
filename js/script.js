@@ -26,7 +26,7 @@ $(document).ready(function(){
           spaceBetween: 40,
         },
         600 : {
-          spaceBetween: 4,
+          spaceBetween: 10,
           slidesPerView : 3,
           slidesPerGroup: 2,
         }
@@ -54,6 +54,7 @@ $(document).ready(function(){
     $('#hamburger').click(function(){
       $('.hamburger-menu-wrap').toggleClass('active');
       $('.hamburger-menu').toggleClass('active');
+      $(this).toggleClass('active');
     });
 
     $('.boot-trigger1 div').click(function(){
