@@ -228,6 +228,7 @@ body{
     top: 0;
     left: 0;
     background-color: #adadad;
+    transition: 0.3s;
     display: none;
 }
 #hamburger span:nth-child(2){
@@ -235,6 +236,21 @@ body{
 }
 #hamburger span:nth-child(3){
     top: 100%;
+}
+
+#hamburger.active span:nth-child(1){
+    top: 50%;
+    transform: rotate(45deg);
+}
+#hamburger.active span:nth-child(2){
+    opacity: 0;
+}
+#hamburger.active span:nth-child(3){
+    top: 50%;
+    transform: rotate(-45deg);
+}
+#hamburger.active span:nth-child(4){
+    opacity: 0;
 }
 
 
@@ -866,8 +882,6 @@ iframe{
 .bottom-left{
     width: 55%;
 }
-.bottom-right{
-}
 .company-about li:first-child {
     padding-left: 0;
     border-left: none;
@@ -1221,6 +1235,14 @@ iframe{
     
 }
 @media(max-width:800px){
+    .product-box{
+        width: 300px;
+        height: 300px;
+    }
+    .product-img{
+        width: 300px;
+        height: 300px;
+    }
     .sec3-right{
         width: 600px;
         margin-top: 0;
@@ -1282,6 +1304,12 @@ iframe{
     }
 }
 @media(max-width:700px){
+    .head-txt{
+        font-size: 32px;
+    }
+    .sub-txt{
+        font-size: 14px;
+    }
     .sec2-banner{
         width: 100%;
         height: 710px;
@@ -1345,7 +1373,7 @@ iframe{
 }
 @media (max-width: 500px){
     .logo{
-        margin-left: 4px;
+        margin-left: 8px;
         margin-right: 44px;
     }
     .icon{
