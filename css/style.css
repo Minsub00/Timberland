@@ -176,6 +176,7 @@ body{
 .right-fifth{
     background: url(../image/search.svg) no-repeat center;
     background-size: contain;
+    margin-left: 132px;
 }
 .banner-slide{
     width: 100%;
@@ -1152,6 +1153,9 @@ iframe{
     }
     .right-fourth{
         margin-bottom: 3px;
+    }
+    .right-fifth{
+        margin-left: 2.08vw;
     }
     
     #hamburger{
